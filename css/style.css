@@ -1,0 +1,109 @@
+/* ____________reset____________ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background: transparent;
+    border: 0;
+}
+
+:root {
+    /* font-size */
+    font-size: 16px;
+
+    /* fot-family */
+    --poppins: 'Poppins';
+    --inter: 'Inter';
+    --open-sans: 'Open Sans Condensed';
+
+    /* colors */
+    --dark-blue: #0D0C22;
+    --wihte: #FFF;
+    --blue: #5465FF;
+    --blue-700: #175CD3;
+    --lavander: #5925DC;
+    --orenge: #C4320A;
+    --dark-grey: 858585;
+    --black: #000;
+}
+/* ____________reset____________ */
+
+/* ____________design-desk-top____________ */
+
+/* ____________header____________ */
+header {
+    padding: 3rem 1rem;
+}
+
+.style-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-sign {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu {
+    display: none;
+}
+
+.flex-sign > button {
+    color: var(--dark-blue);
+    font-family: var(--poppins);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+/* ____________header____________ */
+
+/* ____________hero-section____________ */
+.hero-sec img {
+    width: 100%;
+}
+
+.img-re {
+    display: none;
+}
+/* ____________hero-section____________ */
+
+/* ____________design-desk-top____________ */
+
+/* ____________design-mobile____________ */
+
+@media screen and (max-width: 480px) {
+    /* header */
+    .menu {
+        display: flex;
+    }
+
+    .flex-sign {
+        display: none;
+    }
+
+    /* hero-sec */
+    .hero-sec  img:first-of-type {
+        display: none;
+    }
+
+    .img-re {
+        display: flex;
+    }
+}
+
+/* ____________design-mobile____________ */
